@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <header>
+      <%= link_to "Top", root_path %>
+      <%= link_to "sign in", new_user_session_path %>
+      <%= link_to "sign up", new_user_registration_path %>
+    </header>
     <%= yield %>
   </body>
 </html>
